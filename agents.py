@@ -4,16 +4,9 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from tools import web_search , scrape_url
 from dotenv import load_dotenv
-
+from config import OPENROUTER_API_KEY
 import os
-import streamlit as st
 
-load_dotenv()
-
-OPENROUTER_API_KEY = st.secrets.get(
-    "OPENROUTER_API_KEY",
-    os.getenv("OPENROUTER_API_KEY")
-)
 
 llm = ChatOpenAI(
     base_url="https://openrouter.ai/api/v1",

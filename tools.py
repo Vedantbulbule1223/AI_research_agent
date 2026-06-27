@@ -7,14 +7,8 @@ from tavily import TavilyClient
 import os 
 from dotenv import load_dotenv
 from rich import print
-load_dotenv()
-import streamlit as st
 
-
-TAVILY_API_KEY = st.secrets.get(
-    "TAVILY_API_KEY",
-    os.getenv("TAVILY_API_KEY")
-)
+from config import TAVILY_API_KEY
 
 tavily = TavilyClient(api_key=TAVILY_API_KEY)
 
