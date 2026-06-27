@@ -1,4 +1,4 @@
-from streamlit import st
+from streamlit as st
 
 from langchain.tools import tool 
 import requests
