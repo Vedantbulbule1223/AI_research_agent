@@ -2,6 +2,10 @@
 
 An AI-powered research assistant built with **LangChain**, **OpenRouter**, **Tavily Search**, and **Streamlit**. The application performs web research, reads relevant web pages, generates structured research reports, and critiques the generated reports using multiple AI agents.
 
+## Live Link 
+
+https://ai-research-agent-vedant.streamlit.app/
+
 ## 🚀 Features
 
 * 🔍 Web search using Tavily API
@@ -106,9 +110,6 @@ This project is compatible with **Streamlit Community Cloud**.
 3. Add the required secrets.
 4. Deploy the app.
 
-## 📸 Demo
-
-(Add screenshots or a demo GIF here.)
 
 ## 👨‍💻 Author
 
@@ -116,6 +117,4 @@ This project is compatible with **Streamlit Community Cloud**.
 
 GitHub: https://github.com/Vedantbulbule1223
 
-## 📄 License
 
-This project is licensed under the MIT License.
