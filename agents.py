@@ -4,13 +4,20 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from tools import web_search , scrape_url
 from dotenv import load_dotenv
+
 import os
+import streamlit as st
 
 load_dotenv()
 
+OPENROUTER_API_KEY = st.secrets.get(
+    "OPENROUTER_API_KEY",
+    os.getenv("OPENROUTER_API_KEY")
+)
+
 llm = ChatOpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key=os.environ["OPENROUTER_API_KEY"],
+    api_key=OPENROUTER_API_KEY,
     model="openai/gpt-4o-mini",
     temperature=0.7,
 )
