@@ -1,13 +1,7 @@
-from streamlit as st
-
-from langchain.tools import tool 
+from langchain.tools import tool
 import requests
 from bs4 import BeautifulSoup
 from tavily import TavilyClient
-import os 
-from dotenv import load_dotenv
-from rich import print
-
 from config import TAVILY_API_KEY
 
 tavily = TavilyClient(api_key=TAVILY_API_KEY)
