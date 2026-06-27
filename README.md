@@ -43,7 +43,7 @@ AI_research_agent/
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/AI_research_agent.git
+git clone https://github.com/Vedantbulbule1223/AI_research_agent.git
 cd AI_research_agent
 ```
 
